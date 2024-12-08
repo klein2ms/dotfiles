@@ -65,9 +65,18 @@ ssh -T git@github.com
 
 ### 6. Configure Git
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-```
+# Initial git config
+git config --global credential.helper osxkeychain
+git config --global user.name "Sean Klein"
+git config --global user.email "klein2ms@gmail.com"
+
+# After dotfiles repo is created, set up symlink:
+mv ~/.gitconfig ~/.gitconfig.backup
+ln -s ~/Development/dotfiles/git/.gitconfig ~/.gitconfig
+
+# Verify configuration
+git config --list
+
 
 ### 7. Set Up Directory Structure
 ```bash
