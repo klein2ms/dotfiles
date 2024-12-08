@@ -146,6 +146,17 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
+#### Link ZSH Configuration
+```bash
+# Backup existing zsh config
+mv ~/.zshrc ~/.zshrc.backup
+
+# Create symlink to dotfiles zsh config
+ln -s ~/Development/dotfiles/zsh/.zshrc ~/.zshrc
+
+# Reload configuration
+source ~/.zshrc
+
 ### 9. VS Code Setup
 
 #### Install Extensions
