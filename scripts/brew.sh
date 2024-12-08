@@ -28,6 +28,8 @@ brew install --cask rectangle
 brew install --cask alt-tab
 brew install --cask flutter
 brew install --cask font-fira-code-nerd-font
+brew install --cask notion
+brew install --cask bruno
 
 # Cleanup
 brew cleanup
