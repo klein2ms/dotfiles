@@ -4,6 +4,13 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+[package]
+disabled = true
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow)"
+
 [character]
 success_symbol = '[➜](bold green) '
 error_symbol = '[✗](bold red) '
